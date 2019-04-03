@@ -1,0 +1,112 @@
+body {
+    margin: 0 auto;
+    font-family: 'Ubuntu mono', sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%; 
+}
+
+.title{
+    letter-spacing: 0.2rem;
+    font-size: 2.5em;
+}
+
+nav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position : fixed;
+    width:100%;
+    clear: both;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    background-color: black;
+    font-size: 1em;
+}
+
+
+nav > ul > li{
+    padding: 1em;
+}
+
+nav > ul > li > a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: .2rem;
+}
+
+nav > ul > li > a:hover{
+    color: lightcyan;
+    text-decoration: none;
+}
+
+.push{
+    margin-left: auto;
+    margin-right: 1.5em;
+}
+
+.cover{
+    background-position : center;
+    background:url("menu_background.jpg") no-repeat center fixed;
+    background-size:cover;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:black;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height : 100%;
+    margin-top: 1.5em;
+}
+
+
+.profile{
+    border-radius:50%;
+    border:2px solid black;
+    transition: transform 0.5s ease-out;
+    width: auto;
+    max-height: calc(100% - 270px);
+    min-height: 120px;
+    max-width: auto;
+}
+
+.profile:hover {
+    transform: scale(1.03);
+}
+
+
+.separateur{
+    border: 2px solid orangered;
+    width:85px;
+    display:block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+footer{
+    clear:both;
+    background-color: black;
+}
+/* 
+@media only screen 
+  and (max-width: 800px) 
+ { 
+    .profile{
+        border-radius:50%;
+        border:2px solid black;
+        margin-left:100px;
+    }
+} */
